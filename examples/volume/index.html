@@ -1,14 +1,10 @@
-#!/bin/bash
-
-mkdir "examples/$1"
-
-echo '<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="../../favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exemplo '$1' - WebAudio API</title>
+    <title>Exemplo volume - WebAudio API</title>
   </head>
 
   <body>
@@ -17,7 +13,7 @@ echo '<!DOCTYPE html>
     </header>
     
     <main>
-      <h2>Exemplo '$1'</h2>
+      <h2>Exemplo volume</h2>
       
       <audio controls>
         <source src="../../assets/stand-by-me.ogg" type="audio/ogg" />
@@ -37,9 +33,4 @@ echo '<!DOCTYPE html>
     <script type="module" src="/src/stereo.ts"></script>
   </body>
 </html>
-' > "examples/$1/index.html"
 
-echo "import './guiseek'
-
-import './style.scss'
-" > "src/$1.ts"
