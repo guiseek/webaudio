@@ -20,8 +20,15 @@
         <source src="../../assets/stand-by-me.mp3" type="audio/mp3" />
         <p>Navegador muito antigo para suportar áudio HTML5? Que deprimente!</p>
       </audio>
-      
-      
+
+      <fieldset>
+        <legend>Definir volume</legend>
+        <form>
+          <input type="range" min="0" max="100" step="1" value="50" />
+          <output>0</output>
+          <button type="reset">Redefinir</button>
+        </form>
+      </fieldset>
     </main>
 
 
@@ -30,7 +37,7 @@
       <gui-seek></gui-seek>
     </footer>
 
-    <script type="module" src="/src/stereo.ts"></script>
+    <script type="module" src="/src/volume.ts" defer></script>
   </body>
 </html>
 
